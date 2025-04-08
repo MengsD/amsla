@@ -1,0 +1,41 @@
+# Source Code 
+.
+├── LICENSE
+├── README.md
+├── algo                                   : TGS and baselines
+│   ├── algo.py
+│   ├── algo_base.py
+│   ├── context.py
+│   ├── cost_estimator.py
+│   ├── data_map.py
+│   ├── hpo_algo.py
+│   ├── tgs.py
+│   └── util.py
+├── exp_output                             : output results (@see run_algo.py)
+│   └── vldb26
+├── input                                  : preemptive runs
+│   ├── dinsql_bird.json
+│   ├── dinsql_bird_all.json
+│   ├── dinsql_spider.json
+│   ├── dinsql_spider_all.json
+│   ├── esql_bird_all.json
+│   ├── esql_spider_all.json
+│   ├── lotus_factool_all.json
+│   ├── macsql_bird_all.json
+│   ├── macsql_spider_all.json
+│   └── unidm_impute_restaurant_all.json
+└── run_algo.py                            : a script for reproducing experimental results
+
+
+
+# Reproducing Experimental Results
+
+1. create output directory
+
+   $ mkdir -p ./exp_output/vldb26
+
+2. run scripts 
+  
+   $ python run_algo.py
+
+
